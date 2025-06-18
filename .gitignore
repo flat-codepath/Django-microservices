@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Django
+*.migrations/
+media/
+staticfiles/
+.env
+
+# Or explicitly:
+user_service/env
+product_service/env
+admin_service/.env
+config_service/env
+
+# Docker
+*.pid
+*.db
+*.tar
+.env
+Dockerfile
+*.pyc
+
+# VSCode
+.vscode/
+
+# Mac/Windows
+.DS_Store
+Thumbs.db
