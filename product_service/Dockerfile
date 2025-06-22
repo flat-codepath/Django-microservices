@@ -5,6 +5,7 @@ WORKDIR /app
 COPY . .
 
 
+
 RUN pip config set global.index-url https://pypi.org/simple
 RUN pip install --no-cache-dir -r requirements.txt
 
