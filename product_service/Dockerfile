@@ -1,0 +1,14 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+COPY . .
+
+
+RUN pip config set global.index-url https://pypi.org/simple
+RUN pip install --no-cache-dir -r requirements.txt
+
+EXPOSE 8002
+
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8002"]
+

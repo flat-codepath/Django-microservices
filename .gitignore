@@ -15,13 +15,14 @@ user_service/env
 product_service/env
 admin_service/.env
 config_service/env
+config_service/.env
 
 # Docker
 *.pid
 *.db
 *.tar
 .env
-Dockerfile
+# Dockerfile
 *.pyc
 
 # VSCode
